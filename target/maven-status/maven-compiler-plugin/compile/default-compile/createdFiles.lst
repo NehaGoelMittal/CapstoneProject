@@ -1,0 +1,6 @@
+pages\BasePage.class
+pages\RegisterPage.class
+utils\DataUtils.class
+CapstoneProject\com\simplilearn\App.class
+pages\HomePage.class
+pages\MemberLoginPage.class
