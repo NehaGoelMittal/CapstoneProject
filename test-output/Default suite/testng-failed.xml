@@ -5,9 +5,11 @@
     <classes>
       <class name="testcases.GetBookingList">
         <methods>
+          <include name="closeConnection"/>
           <include name="connectionsetUp"/>
-          <include name="setUp"/>
+          <include name="cleanUpActivities"/>
           <include name="getBookingsList"/>
+          <include name="LsetUp"/>
         </methods>
       </class> <!-- testcases.GetBookingList -->
     </classes>

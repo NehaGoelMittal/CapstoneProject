@@ -1,4 +1,9 @@
-Runner\TestRunner.class
+testcases\FlightTest.class
+testcases\GetBookingList.class
+testcases\Login.class
 stepDefs\Hooks.class
-stepDefs\RegisterSteps.class
 testcases\BaseTest.class
+testcases\Register.class
+bookingList\FetchBookingList.class
+Runner\TestRunner.class
+stepDefs\RegisterSteps.class

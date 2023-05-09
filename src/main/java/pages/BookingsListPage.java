@@ -6,7 +6,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public class BookingsListPage extends BasePage{
 	
-	By bookingsListPage = By.xpath("//h3[text()= 'FLYAWAY - YOUR BOOKINGS'] ");
+	By bookingsListPage = By.xpath("//h3[contains(text(),'YOUR BOOKINGS')] ");
 	
 	public BookingsListPage(ThreadLocal<WebDriver> driver) {
 		super(driver);
@@ -18,3 +18,4 @@ public class BookingsListPage extends BasePage{
 	}
 
 }
+

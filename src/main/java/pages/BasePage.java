@@ -13,7 +13,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class BasePage {
 	
-	protected ThreadLocal<WebDriver> driver2;
+	protected ThreadLocal<WebDriver> driver2 = new ThreadLocal();
 
     public BasePage(ThreadLocal<WebDriver> driver) {
         this.driver2 = driver;

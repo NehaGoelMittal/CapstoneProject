@@ -12,8 +12,9 @@ public class RegisterPage extends BasePage {
 	By name = By.name("name");
 	By address = By.name("address");
 	By city = By.name("city");
-	By signUpButton = By.xpath("//button[text()='Signup']");
+	By com = By.xpath("//button[text()='Signup']");
 	By verifyLink = By.xpath("//a[contains(text(),'continue checking flights')]");
+	By signUpButton = By.xpath("//button[text()='Signup']");
 	
 
 	public RegisterPage(ThreadLocal<WebDriver> driver) {

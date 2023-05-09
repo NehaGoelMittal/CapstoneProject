@@ -1,31 +1,99 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="0" passed="0" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-04-24T16:20:28 IST" name="Surefire suite" finished-at="2023-04-24T16:20:29 IST" duration-ms="287">
+  <suite started-at="2023-05-09T11:20:41 IST" name="Suite" finished-at="2023-05-09T11:20:50 IST" duration-ms="8511">
     <groups>
-      <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runner.TestRunner@957e06]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
-      </group> <!-- cucumber -->
     </groups>
-    <test started-at="2023-04-24T16:20:28 IST" name="Surefire test" finished-at="2023-04-24T16:20:29 IST" duration-ms="287">
-      <class name="Runner.TestRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:Runner.TestRunner@957e06]" started-at="2023-04-24T16:20:28 IST" name="setUpClass" finished-at="2023-04-24T16:20:29 IST" duration-ms="141" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@4648ce9]]>
-              </value>
-            </param>
-          </params>
+    <test started-at="2023-05-09T11:20:41 IST" name="Test" finished-at="2023-05-09T11:20:50 IST" duration-ms="8511">
+      <class name="testcases.GetBookingList">
+        <test-method is-config="true" signature="connectionsetUp()[pri:0, instance:testcases.GetBookingList@742ff096]" started-at="2023-05-09T11:20:48 IST" name="connectionsetUp" finished-at="2023-05-09T11:20:48 IST" duration-ms="5" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUpClass -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:Runner.TestRunner@957e06]" started-at="2023-04-24T16:20:29 IST" name="tearDownClass" finished-at="2023-04-24T16:20:29 IST" duration-ms="127" status="PASS">
+        </test-method> <!-- connectionsetUp -->
+        <test-method is-config="true" signature="LsetUp()[pri:0, instance:testcases.GetBookingList@742ff096]" started-at="2023-05-09T11:20:48 IST" name="LsetUp" finished-at="2023-05-09T11:20:49 IST" duration-ms="950" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDownClass -->
-      </class> <!-- Runner.TestRunner -->
-    </test> <!-- Surefire test -->
-  </suite> <!-- Surefire suite -->
+        </test-method> <!-- LsetUp -->
+        <test-method signature="getBookingsList()[pri:0, instance:testcases.GetBookingList@742ff096]" started-at="2023-05-09T11:20:49 IST" name="getBookingsList" finished-at="2023-05-09T11:20:50 IST" duration-ms="1242" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getBookingsList -->
+        <test-method is-config="true" signature="cleanUpActivities()[pri:0, instance:testcases.GetBookingList@742ff096]" started-at="2023-05-09T11:20:50 IST" name="cleanUpActivities" finished-at="2023-05-09T11:20:50 IST" duration-ms="153" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUpActivities -->
+        <test-method is-config="true" signature="closeConnection()[pri:0, instance:testcases.GetBookingList@742ff096]" started-at="2023-05-09T11:20:50 IST" name="closeConnection" finished-at="2023-05-09T11:20:50 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeConnection -->
+      </class> <!-- testcases.GetBookingList -->
+      <class name="testcases.Login">
+        <test-method is-config="true" signature="connectionsetUp()[pri:0, instance:testcases.Login@712625fd]" started-at="2023-05-09T11:20:44 IST" name="connectionsetUp" finished-at="2023-05-09T11:20:44 IST" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- connectionsetUp -->
+        <test-method is-config="true" signature="LsetUp()[pri:0, instance:testcases.Login@712625fd]" started-at="2023-05-09T11:20:44 IST" name="LsetUp" finished-at="2023-05-09T11:20:45 IST" duration-ms="965" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LsetUp -->
+        <test-method signature="loginTest()[pri:0, instance:testcases.Login@712625fd]" started-at="2023-05-09T11:20:45 IST" name="loginTest" finished-at="2023-05-09T11:20:46 IST" duration-ms="351" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="cleanUpActivities()[pri:0, instance:testcases.Login@712625fd]" started-at="2023-05-09T11:20:46 IST" name="cleanUpActivities" finished-at="2023-05-09T11:20:46 IST" duration-ms="189" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUpActivities -->
+        <test-method is-config="true" signature="closeConnection()[pri:0, instance:testcases.Login@712625fd]" started-at="2023-05-09T11:20:46 IST" name="closeConnection" finished-at="2023-05-09T11:20:46 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeConnection -->
+      </class> <!-- testcases.Login -->
+      <class name="testcases.Register">
+        <test-method is-config="true" signature="connectionsetUp()[pri:0, instance:testcases.Register@33065d67]" started-at="2023-05-09T11:20:42 IST" name="connectionsetUp" finished-at="2023-05-09T11:20:42 IST" duration-ms="175" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- connectionsetUp -->
+        <test-method is-config="true" signature="LsetUp()[pri:0, instance:testcases.Register@33065d67]" started-at="2023-05-09T11:20:42 IST" name="LsetUp" finished-at="2023-05-09T11:20:43 IST" duration-ms="1765" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LsetUp -->
+        <test-method signature="signUp()[pri:0, instance:testcases.Register@33065d67]" started-at="2023-05-09T11:20:43 IST" name="signUp" finished-at="2023-05-09T11:20:44 IST" duration-ms="575" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signUp -->
+        <test-method is-config="true" signature="cleanUpActivities()[pri:0, instance:testcases.Register@33065d67]" started-at="2023-05-09T11:20:44 IST" name="cleanUpActivities" finished-at="2023-05-09T11:20:44 IST" duration-ms="186" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUpActivities -->
+        <test-method is-config="true" signature="closeConnection()[pri:0, instance:testcases.Register@33065d67]" started-at="2023-05-09T11:20:44 IST" name="closeConnection" finished-at="2023-05-09T11:20:44 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeConnection -->
+      </class> <!-- testcases.Register -->
+      <class name="testcases.FlightTest">
+        <test-method is-config="true" signature="connectionsetUp()[pri:0, instance:testcases.FlightTest@7bba5817]" started-at="2023-05-09T11:20:46 IST" name="connectionsetUp" finished-at="2023-05-09T11:20:46 IST" duration-ms="26" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- connectionsetUp -->
+        <test-method is-config="true" signature="LsetUp()[pri:0, instance:testcases.FlightTest@7bba5817]" started-at="2023-05-09T11:20:46 IST" name="LsetUp" finished-at="2023-05-09T11:20:47 IST" duration-ms="973" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LsetUp -->
+        <test-method signature="bookFlight()[pri:0, instance:testcases.FlightTest@7bba5817]" started-at="2023-05-09T11:20:47 IST" name="bookFlight" finished-at="2023-05-09T11:20:48 IST" duration-ms="782" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bookFlight -->
+        <test-method is-config="true" signature="cleanUpActivities()[pri:0, instance:testcases.FlightTest@7bba5817]" started-at="2023-05-09T11:20:48 IST" name="cleanUpActivities" finished-at="2023-05-09T11:20:48 IST" duration-ms="133" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUpActivities -->
+        <test-method is-config="true" signature="closeConnection()[pri:0, instance:testcases.FlightTest@7bba5817]" started-at="2023-05-09T11:20:48 IST" name="closeConnection" finished-at="2023-05-09T11:20:48 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeConnection -->
+      </class> <!-- testcases.FlightTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

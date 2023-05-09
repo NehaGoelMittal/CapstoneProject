@@ -1,6 +1,9 @@
 pages\BasePage.class
-pages\RegisterPage.class
-utils\DataUtils.class
-CapstoneProject\com\simplilearn\App.class
+pages\BookingsConfirmationPage.class
+utils\HandleWebDriver.class
+pages\BookingsListPage.class
+pages\PaymentGatewayPage.class
 pages\HomePage.class
 pages\MemberLoginPage.class
+pages\RegisterPage.class
+utils\DataUtils.class

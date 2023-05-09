@@ -7,14 +7,11 @@ import java.sql.Statement;
 import java.time.Duration;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 
-import pages.BasePage;
 import pages.BookingsConfirmationPage;
 import pages.BookingsListPage;
 import pages.HomePage;
@@ -27,6 +24,7 @@ public class BaseTest {
 
 	protected static ThreadLocal<WebDriver> driver = new ThreadLocal<WebDriver>();
 
+	//public HomePage homePage;
 	protected static HomePage homePage;
 	protected static MemberLoginPage memLoginPage;
 	protected static RegisterPage registerPage;
@@ -36,13 +34,13 @@ public class BaseTest {
 	Connection ct = null;
 	Statement st;
 	
-	
-//	jdbc.driverClassName=com.mysql.jdbc.Driver
-//			jdbc.dialect=org.hibernate.dialect.MySQLDialect
-//			jdbc.databaseurl=jdbc:mysql://127.0.0.1:3306/flyaway
-//			jdbc.username=root
-//			jdbc.password=
-//location: C:\Program Files\Apache Software Foundation\Tomcat 9.0\webapps\FlyAway\WEB-INF
+/* Notes:	
+	jdbc.driverClassName=com.mysql.jdbc.Driver
+			jdbc.dialect=org.hibernate.dialect.MySQLDialect
+			jdbc.databaseurl=jdbc:mysql://127.0.0.1:3306/flyaway
+			jdbc.username=root
+			jdbc.password=
+location: C:\Program Files\Apache Software Foundation\Tomcat 9.0\webapps\FlyAway\WEB-INF */
 	
 	@BeforeClass
 	public void connectionsetUp() throws SQLException, ClassNotFoundException, InterruptedException {
@@ -52,7 +50,7 @@ public class BaseTest {
 	}
 
 	@BeforeMethod(alwaysRun = true)
-	protected void setUp() {
+	public void LsetUp() {
 
 		HandleWebDriver handleWebDriver = new HandleWebDriver();
 		driver = handleWebDriver.getDriver(driver);
@@ -64,7 +62,7 @@ public class BaseTest {
 	public void launchBrowser() {
 		driver.get().manage().window().maximize();
 		driver.get().manage().deleteAllCookies();
-		driver.get().get("http://localhost:8080/FlyAway/");
+		driver.get().get("http://localhost:8443/FlyAway/");
 		driver.get().manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 
 	}
@@ -88,5 +86,17 @@ public class BaseTest {
 		memLoginPage.clickHomeLink();
 	}
 
+	@AfterMethod(alwaysRun = true)
+	public void cleanUpActivities(){
+		driver.get().quit();
 
+		
+	}
+	
+	@AfterClass
+	public void closeConnection() throws SQLException  {
+		if (ct != null) {
+			ct.close();
+			} 
+	}
 }
